@@ -1,0 +1,228 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>NICE</title>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta
+      name="description"
+      content="National Innovation Competition for Entrepreneurship"
+    />
+    <meta
+      name="keywords"
+      content="Competition, Morocco, FSTS, FST Settat, UHP, UH1, Innovation, Entrepreneurship"
+    />
+    <meta name="author" content="Cellule IT - NICE" />
+    <meta name="MobileOptimized" content="320" />
+    <!--srart theme style -->
+    <link rel="stylesheet" href="{% static 'assets/css/animate.css' %}" />
+    <link rel="stylesheet" href="{% static 'assets/css/bootstrap.css' %}" />
+    <link rel="stylesheet" href="{% static 'assets/css/font-awesome.css' %}" />
+    <link rel="stylesheet" href="{% static 'assets/css/owl.carousel.css' %}" />
+    <link
+      rel="stylesheet"
+      href="{% static 'assets/css/owl.theme.default.css' %}"
+    />
+    <link
+      rel="stylesheet"
+      href="{% static 'assets/css/magnific-popup.css' %}"
+    />
+    <link rel="stylesheet" href="{% static 'assets/css/fonts.css' %}" />
+    <link rel="stylesheet" href="{% static 'assets/css/style.css' %}" />
+    <!-- favicon links -->
+    <link
+      rel="icon"
+      href="{% static 'assets/images/header/favicon.ico' %}"
+      type="image/x-icon"
+    />
+    <link
+      rel="shortcut icon"
+      href="{% static 'assets/images/header/favicon.ico' %}"
+      type="image/x-icon"
+    />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="{% static 'assets/images/header/favicon.ico' %}"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="{% static 'assets/images/header/NICE-LG-W.png' %}"
+    />
+  </head>
+  <body>
+    {% block header %}
+    <!-- Header Wrapper Start -->
+    <div data-scroll-index="0" id="home" style="width: 100%; float: left">
+      <div class="lv_header_wrapper">
+        <div class="lv_img_overlay"></div>
+        <div class="lv_bottom_header_wrapper">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
+                <div class="lv_mainmenu_wrapper">
+                  <div class="lv_main_menu_wrapper">
+                    <div
+                      class="lv_main_menu lv_single_index_menu"
+                      style="display: flex"
+                    >
+                      <img
+                        src="{% static 'assets/images/header/NICE-LG-W.png' %}"
+                        style="
+                          height: 100px;
+                          padding-top: 9px;
+                          padding-right: 15px;
+                        "
+                        alt="Logo"
+                      />
+                      <ul style="padding-left: 12%; padding-top: 1.5%">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#schedule">Schedule</a></li>
+                        <li><a href="#members">Our Members</a></li>
+                        <li><a href="#faq">FAQ’s</a></li>
+                        <li><a href="#sponsors">Sponsors</a></li>
+                        <li>
+                          <a href="https://bit.ly/3GPDfcb" target="blank"
+                            >Register</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        {% block NICE %} {% endblock NICE %}
+      </div>
+    </div>
+    <!-- Header Wrapper End -->
+    {% endblock header %} {% block presentation %}
+    <!-- ****************************** -->
+    {%endblock presentation %} {%block members %}{% endblock members %}
+    <!-- ùùùùùùùùùùùùùùùùùùùùù -->{% block event %}<!-- Map Wrapper Start -->
+    {% endblock event%} {% block footer %} {% block map %}
+    <!-- Map Wrapper Start -->
+    <div data-scroll-index="8" style="width: 100%; float: left">
+      <div class="lv_map_wrapper">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6690.052476025977!2d-7.6187016193262975!3d33.02943920733909!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda61aab74421995%3A0xb95e75c8335bbc60!2sUniversit%C3%A9%20Hassan%20I%20-%20Settat!5e0!3m2!1sen!2sma!4v1654294107579!5m2!1sen!2sma"
+          style="border: 0; width: 100%; height: 70vh"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </div>
+    <!-- Map Wrapper End -->
+
+    {% endblock map %}
+
+    <!-- Register Form Wrapper Start -->
+    <div data-scroll-index="9" style="width: 100%; float: left">
+      <!-- Footer Wrapper Start -->
+      <div class="lv_footer_wrapper" id="foo_ter">
+        <a
+          href="javascript:void(0);"
+          id="scroll"
+          title="Scroll to Top"
+          style="display: none"
+          ><span></span
+        ></a>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div
+                class="lv_footer_section"
+                style="
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: center;
+                "
+              >
+                <img
+                  src="{% static 'assets/images/header/NICE-LG-W.png'%}"
+                  style="height: 100px; padding-top: 9px"
+                  alt="Logo"
+                />
+
+                <p style="margin-top: 0; padding-top: 3em; padding-left: 1.2em">
+                  © 2022 NICE All rights reserved.
+                </p>
+                <div>
+                  <a
+                    href="https://www.linkedin.com/company/uh1nice"
+                    target="_blank"
+                    class="footer__social-link"
+                  >
+                    <!--<i class="ri-linkedin-fill"></i>-->
+                    <img
+                      src="{% static 'assets/images/footer/lin.png' %}"
+                      style="padding-right: 1em !important; padding-top: 0.8em"
+                    />
+                  </a>
+                  <a
+                    href="https://instagram.com/nice_uh1"
+                    target="_blank"
+                    class="footer__social-link"
+                  >
+                    <img
+                      src="{% static 'assets/images/footer/ig.png' %}"
+                      style="padding-right: 1em !important; padding-top: 0.8em"
+                    />
+                  </a>
+                  <a
+                    href="https://www.facebook.com/Nice_uh1-110603931657737/"
+                    target="_blank"
+                    class="footer__social-link"
+                  >
+                    <img
+                      src="{% static 'assets/images/footer/fb.png' %}"
+                      style="padding-top: 0.8em"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer Wrapper End -->
+    {% endblock footer %}
+
+    <script
+      type="text/javascript"
+      src="{% static 'assets/js/jquery.js' %}"
+    ></script>
+    <script
+      type="text/javascript"
+      src="{% static 'assets/js/bootstrap.js' %}"
+    ></script>
+    <script
+      type="text/javascript"
+      src="{% static 'assets/js/owl.carousel.js' %}"
+    ></script>
+    <script
+      type="text/javascript"
+      src="{% static 'assets/js/modernizr.js' %}"
+    ></script>
+    <script
+      type="text/javascript"
+      src="{% static 'assets/js/jquery.magnific-popup.js' %}"
+    ></script>
+    <script
+      type="text/javascript"
+      src="{% static 'assets/js/contact_form.js' %}"
+    ></script>
+    <script
+      type="text/javascript"
+      src="{% static 'assets/js/custom.js' %}"
+    ></script>
+  </body>
+</html>

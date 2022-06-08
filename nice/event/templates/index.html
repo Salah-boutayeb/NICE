@@ -1,0 +1,1448 @@
+{% extends "base.html" %} {% load static %} {% block NICE %}
+<div class="lv_timer_wrapper lv_single_index_menu">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <div class="lv_timer_info">
+          <h1>National Innovation Competition for Entrepreneurship</h1>
+          <p>25 - 26 June, 2022, Morocco</p>
+        </div>
+        <div id="clockdiv">
+          <div>
+            <span id="days"></span>
+            <div class="smalltext"><b>Days</b></div>
+          </div>
+          <div>
+            <span id="hours"></span>
+            <div class="smalltext"><b>hours</b></div>
+          </div>
+          <div>
+            <span id="minutes"></span>
+            <div class="smalltext"><b>minutes</b></div>
+          </div>
+          <div>
+            <span id="seconds"></span>
+            <div class="smalltext"><b>seconds</b></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <a href="#foo_ter" id="headbottom"><span></span></a>
+</div>
+{% endblock NICE %} {% block presentation %}
+
+<!-- About Wrapper start -->
+{% block about %}
+<div data-scroll-index="1" id="about" style="width: 100%; float: left">
+  <div class="lv_about_wrapper lv_toppadder100 lv_bottompadder100">
+    <div class="container">
+      <div class="row" id="about">
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 lv_toppadder50">
+          <div class="lv_heading_left">
+            <h1>About NICE</h1>
+          </div>
+          <div class="lv_about_info">
+            <span>National Innovation Competition for Entrepreneurship</span>
+            <p>
+              NICE is a national competition organised by students from
+              university Hassan first. Teams from different schools and
+              faculties can take part in the first edition of NICE on June 30,
+              2022 in order to share experiences, get workshops & certifications
+              ...
+            </p>
+          </div>
+          <div class="lv_btn lv_toppadder30">
+            <a href="https://bit.ly/3GPDfcb" target="blank"
+              ><i aria-hidden="true"></i>Register Now</a
+            >
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 lv_toppadder50">
+          <div class="lv_event_schedule">
+            <ul>
+              <li>
+                <div class="lv_event_schedule_info">
+                  <svg
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    x="0px"
+                    y="0px"
+                    viewBox="0 0 34.166 34.166"
+                    style="enable-background: new 0 0 34.166 34.166"
+                    xml:space="preserve"
+                  >
+                    <g>
+                      <g>
+                        <g>
+                          <path
+                            d="M17.083,19.109c-3.131,0-5.679-2.548-5.679-5.68s2.547-5.68,5.679-5.68s5.679,2.548,5.679,5.68
+                                                S20.214,19.109,17.083,19.109z M17.083,8.75c-2.58,0-4.679,2.099-4.679,4.68s2.099,4.68,4.679,4.68s4.679-2.099,4.679-4.68
+                                                S19.663,8.75,17.083,8.75z"
+                          />
+                        </g>
+                      </g>
+                      <path
+                        d="M17.067,34.166c-0.185,0-0.355-0.102-0.442-0.266l-4.175-7.877c-5.269-1.938-8.794-6.974-8.794-12.594
+                                          C3.656,6.024,9.679,0,17.083,0C24.487,0,30.51,6.024,30.51,13.43c0,5.638-3.542,10.68-8.833,12.608L17.509,33.9
+                                          C17.422,34.064,17.252,34.166,17.067,34.166z M17.083,1C10.231,1,4.656,6.576,4.656,13.43c0,5.261,3.34,9.97,8.311,11.717
+                                          c0.119,0.042,0.217,0.126,0.276,0.237l3.824,7.215l3.817-7.201c0.059-0.111,0.158-0.196,0.278-0.238
+                                          c4.993-1.737,8.348-6.451,8.348-11.73C29.51,6.576,23.935,1,17.083,1z"
+                      />
+                    </g>
+                  </svg>
+                  <h4>Settat</h4>
+                  <p>Morocco</p>
+                </div>
+              </li>
+              <li>
+                <div class="lv_event_schedule_info">
+                  <svg
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    x="0px"
+                    y="0px"
+                    viewBox="0 0 492.308 492.308"
+                    style="enable-background: new 0 0 492.308 492.308"
+                    xml:space="preserve"
+                  >
+                    <g>
+                      <g>
+                        <path
+                          d="M426.567,46.212V28.923C426.567,12.971,413.591,0,397.639,0c-15.947,0-28.923,12.971-28.923,28.923v17.288H123.591V28.923
+                                             C123.591,12.971,110.615,0,94.668,0C78.721,0,65.745,12.971,65.745,28.923v17.288H0v446.096h492.308V46.212H426.567z
+                                             M388.409,28.923c0-5.087,4.144-9.231,9.236-9.231c5.091,0,9.231,4.144,9.231,9.231v43.596h-18.466V28.923z M85.437,28.923
+                                             c0-5.087,4.139-9.231,9.231-9.231c5.091,0,9.231,4.144,9.231,9.231v43.596H85.437V28.923z M472.615,472.615H19.692V173.404
+                                             h452.923V472.615z M472.615,153.712H19.692V65.904h46.053v26.308h57.846V65.904h245.125v26.308h57.851V65.904h46.048V153.712z"
+                        />
+                      </g>
+                    </g>
+                    <g>
+                      <g>
+                        <polygon
+                          points="348.072,235.01 209.851,374.625 144.236,308.356 130.245,322.202 209.851,402.625 362.063,248.856 		"
+                        />
+                      </g>
+                    </g>
+                  </svg>
+                  <h4>27th - 3rd Jun.</h4>
+                  <p>2022</p>
+                </div>
+              </li>
+              <li>
+                <div class="lv_event_schedule_info">
+                  <svg
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    x="0px"
+                    y="0px"
+                    viewBox="0 0 512 512"
+                    style="enable-background: new 0 0 512 512"
+                    xml:space="preserve"
+                  >
+                    <g>
+                      <path
+                        d="M344,464h-32v-24c0-4.418-3.582-8-8-8s-8,3.582-8,8v24h-80v-24c0-4.418-3.582-8-8-8s-8,3.582-8,8v24h-32
+                                          c-8.822,0-16,7.177-16,16v24c0,4.418,3.582,8,8,8h192c4.418,0,8-3.582,8-8v-24C360,471.177,352.822,464,344,464z M344,496H168v-16
+                                          h176V496z"
+                      />
+                      <path
+                        d="M432,184h-40v-80c0-2.104-0.07-4.191-0.194-6.265C391.93,97.176,392,96.597,392,96c0-1.054-0.209-2.058-0.579-2.979
+                                          C385.918,40.817,341.638,0,288,0h-64c-53.638,0-97.918,40.817-103.421,93.021C120.209,93.942,120,94.946,120,96
+                                          c0,0.597,0.07,1.176,0.194,1.735C120.07,99.809,120,101.896,120,104v80H80c-4.418,0-8,3.582-8,8s3.582,8,8,8h8v80
+                                          c0,74.991,61.009,136,136,136h64c74.991,0,136-61.009,136-136v-80h8c4.418,0,8-3.582,8-8S436.418,184,432,184z M136,152h72
+                                          c4.418,0,8-3.582,8-8s-3.582-8-8-8h-72v-32h72c4.418,0,8-3.582,8-8s-3.582-8-8-8h-70.538c7.546-40.911,43.478-72,86.538-72h64
+                                          c43.06,0,78.992,31.089,86.538,72H304c-4.418,0-8,3.582-8,8s3.582,8,8,8h72v32h-72c-4.418,0-8,3.582-8,8s3.582,8,8,8h72v32h-72
+                                          c-4.418,0-8,3.582-8,8s3.582,8,8,8h72v32h-72c-4.418,0-8,3.582-8,8s3.582,8,8,8h72v32h-72c-4.418,0-8,3.582-8,8s3.582,8,8,8h70.538
+                                          c-7.546,40.911-43.478,72-86.538,72h-64c-43.061,0-78.992-31.089-86.538-72H208c4.418,0,8-3.582,8-8s-3.582-8-8-8h-72v-32h72
+                                          c4.418,0,8-3.582,8-8s-3.582-8-8-8h-72v-32h72c4.418,0,8-3.582,8-8s-3.582-8-8-8h-72V152z M408,280c0,66.168-53.832,120-120,120
+                                          h-64c-66.168,0-120-53.832-120-120v-80h16v80c0,2.104,0.07,4.191,0.194,6.265C120.07,286.824,120,287.403,120,288
+                                          c0,1.054,0.209,2.058,0.579,2.979C126.082,343.183,170.362,384,224,384h64c53.638,0,97.918-40.817,103.421-93.021
+                                          c0.37-0.922,0.579-1.926,0.579-2.979c0-0.597-0.07-1.176-0.194-1.735C391.93,284.191,392,282.104,392,280v-80h16V280z"
+                      />
+                    </g>
+                  </svg>
+                  <h4>12 Speakers</h4>
+                  <p>EXPERTS</p>
+                </div>
+              </li>
+              <li>
+                <div class="lv_event_schedule_info">
+                  <svg
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    x="0px"
+                    y="0px"
+                    viewBox="0 0 60 60"
+                    style="enable-background: new 0 0 60 60"
+                    xml:space="preserve"
+                  >
+                    <path
+                      d="M55.014,45.389l-9.553-4.776C44.56,40.162,44,39.256,44,38.248v-3.381c0.229-0.28,0.47-0.599,0.719-0.951
+                                       c1.239-1.75,2.232-3.698,2.954-5.799C49.084,27.47,50,26.075,50,24.5v-4c0-0.963-0.36-1.896-1-2.625v-5.319
+                                       c0.056-0.55,0.276-3.824-2.092-6.525C44.854,3.688,41.521,2.5,37,2.5s-7.854,1.188-9.908,3.53c-1.435,1.637-1.918,3.481-2.064,4.805
+                                       C23.314,9.949,21.294,9.5,19,9.5c-10.389,0-10.994,8.855-11,9v4.579c-0.648,0.706-1,1.521-1,2.33v3.454
+                                       c0,1.079,0.483,2.085,1.311,2.765c0.825,3.11,2.854,5.46,3.644,6.285v2.743c0,0.787-0.428,1.509-1.171,1.915l-6.653,4.173
+                                       C1.583,48.134,0,50.801,0,53.703V57.5h14h2h44v-4.043C60,50.019,58.089,46.927,55.014,45.389z M14,53.262V55.5H2v-1.797
+                                       c0-2.17,1.184-4.164,3.141-5.233l6.652-4.173c1.333-0.727,2.161-2.121,2.161-3.641v-3.591l-0.318-0.297
+                                       c-0.026-0.024-2.683-2.534-3.468-5.955l-0.091-0.396l-0.342-0.22C9.275,29.899,9,29.4,9,28.863v-3.454
+                                       c0-0.36,0.245-0.788,0.671-1.174L10,23.938l-0.002-5.38C10.016,18.271,10.537,11.5,19,11.5c2.393,0,4.408,0.553,6,1.644v4.731
+                                       c-0.64,0.729-1,1.662-1,2.625v4c0,0.304,0.035,0.603,0.101,0.893c0.027,0.116,0.081,0.222,0.118,0.334
+                                       c0.055,0.168,0.099,0.341,0.176,0.5c0.001,0.002,0.002,0.003,0.003,0.005c0.256,0.528,0.629,1,1.099,1.377
+                                       c0.005,0.019,0.011,0.036,0.016,0.054c0.06,0.229,0.123,0.457,0.191,0.68l0.081,0.261c0.014,0.046,0.031,0.093,0.046,0.139
+                                       c0.035,0.108,0.069,0.215,0.105,0.321c0.06,0.175,0.123,0.356,0.196,0.553c0.031,0.082,0.065,0.156,0.097,0.237
+                                       c0.082,0.209,0.164,0.411,0.25,0.611c0.021,0.048,0.039,0.1,0.06,0.147l0.056,0.126c0.026,0.058,0.053,0.11,0.079,0.167
+                                       c0.098,0.214,0.194,0.421,0.294,0.621c0.016,0.032,0.031,0.067,0.047,0.099c0.063,0.125,0.126,0.243,0.189,0.363
+                                       c0.108,0.206,0.214,0.4,0.32,0.588c0.052,0.092,0.103,0.182,0.154,0.269c0.144,0.246,0.281,0.472,0.414,0.682
+                                       c0.029,0.045,0.057,0.092,0.085,0.135c0.242,0.375,0.452,0.679,0.626,0.916c0.046,0.063,0.086,0.117,0.125,0.17
+                                       c0.022,0.029,0.052,0.071,0.071,0.097v3.309c0,0.968-0.528,1.856-1.377,2.32l-2.646,1.443l-0.461-0.041l-0.188,0.395l-5.626,3.069
+                                       C15.801,46.924,14,49.958,14,53.262z M58,55.5H16v-2.238c0-2.571,1.402-4.934,3.659-6.164l8.921-4.866
+                                       C30.073,41.417,31,39.854,31,38.155v-4.018v-0.001l-0.194-0.232l-0.038-0.045c-0.002-0.003-0.064-0.078-0.165-0.21
+                                       c-0.006-0.008-0.012-0.016-0.019-0.024c-0.053-0.069-0.115-0.152-0.186-0.251c-0.001-0.002-0.002-0.003-0.003-0.005
+                                       c-0.149-0.207-0.336-0.476-0.544-0.8c-0.005-0.007-0.009-0.015-0.014-0.022c-0.098-0.153-0.202-0.32-0.308-0.497
+                                       c-0.008-0.013-0.016-0.026-0.024-0.04c-0.226-0.379-0.466-0.808-0.705-1.283c0,0-0.001-0.001-0.001-0.002
+                                       c-0.127-0.255-0.254-0.523-0.378-0.802l0,0c-0.017-0.039-0.035-0.077-0.052-0.116h0c-0.055-0.125-0.11-0.256-0.166-0.391
+                                       c-0.02-0.049-0.04-0.1-0.06-0.15c-0.052-0.131-0.105-0.263-0.161-0.414c-0.102-0.272-0.198-0.556-0.29-0.849l-0.055-0.178
+                                       c-0.006-0.02-0.013-0.04-0.019-0.061c-0.094-0.316-0.184-0.639-0.26-0.971l-0.091-0.396l-0.341-0.22
+                                       C26.346,25.803,26,25.176,26,24.5v-4c0-0.561,0.238-1.084,0.67-1.475L27,18.728V12.5v-0.354l-0.027-0.021
+                                       c-0.034-0.722,0.009-2.935,1.623-4.776C30.253,5.458,33.081,4.5,37,4.5c3.905,0,6.727,0.951,8.386,2.828
+                                       c1.947,2.201,1.625,5.017,1.623,5.041L47,18.728l0.33,0.298C47.762,19.416,48,19.939,48,20.5v4c0,0.873-0.572,1.637-1.422,1.899
+                                       l-0.498,0.153l-0.16,0.495c-0.669,2.081-1.622,4.003-2.834,5.713c-0.297,0.421-0.586,0.794-0.837,1.079L42,34.123v4.125
+                                       c0,1.77,0.983,3.361,2.566,4.153l9.553,4.776C56.513,48.374,58,50.78,58,53.457V55.5z"
+                    />
+                  </svg>
+                  <h4>15 Teams</h4>
+                  <p>CONFIRM</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Event Gallry Wrapper Start -->
+  fid
+  <div class="lv_event_glry_wrapper lv_toppadder100 lv_bottompadder100">
+    <div class="lv_img_overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div
+          class="col-lg-8 col-md-8 col-sm-12 col-xs-12 col-lg-offset-2 col-md-offset-2"
+        >
+          <div class="lv_heading_center">
+            <h1>Our Events Gallery</h1>
+            <p>
+              Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin,
+              lorem quis bibendum auctor, nisi elit consequat ipsum, nec
+              sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate
+              cursus.
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <div class="lv_glry_slider popup-gallery">
+            <div class="owl-carousel owl-theme">
+              <div class="item">
+                <a href="assets/images/content/big_eg1.jpg" title=""
+                  ><img src="assets/images/content/eg1.jpg" alt="Event"
+                /></a>
+              </div>
+              <div class="item">
+                <a href="assets/images/content/big_eg2.jpg" title=""
+                  ><img src="assets/images/content/eg2.jpg" alt="Event"
+                /></a>
+              </div>
+              <div class="item">
+                <a href="assets/images/content/big_eg3.jpg" title=""
+                  ><img src="assets/images/content/eg3.jpg" alt="Event"
+                /></a>
+              </div>
+              <div class="item">
+                <a href="assets/images/content/big_eg4.jpg" title=""
+                  ><img src="assets/images/content/eg4.jpg" alt="Event"
+                /></a>
+              </div>
+              <div class="item">
+                <a href="assets/images/content/big_eg1.jpg" title=""
+                  ><img src="assets/images/content/eg1.jpg" alt="Event"
+                /></a>
+              </div>
+              <div class="item">
+                <a href="assets/images/content/big_eg2.jpg" title=""
+                  ><img src="assets/images/content/eg2.jpg" alt="Event"
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock about %}
+<!-- About Wrapper End -->
+{% block events %}
+<div data-scroll-index="2" id="schedule" style="width: 100%; float: left">
+  <div class="lv_event_schedule_wrapper lv_toppadder100 lv_bottompadder100">
+    <div class="container">
+      <div class="row">
+        <div
+          class="col-lg-8 col-md-8 col-sm-12 col-xs-12 col-lg-offset-2 col-md-offset-2"
+        >
+          <div class="lv_heading_center">
+            <h1>Event Schedule</h1>
+            <p>
+              Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin,
+              lorem quis bibendum auctor, nisi elit consequat ipsum, nec
+              sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate
+              cursus.
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <div class="lv_schedule_infotabs">
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs" role="tablist">
+              <li role="presentation" class="active">
+                <a href="#0" aria-controls="0" role="tab" data-toggle="tab">
+                  <p>Jun 24, 2022</p>
+                  <span>Friday</span>
+                </a>
+              </li>
+              <li role="presentation">
+                <a href="#1" aria-controls="1" role="tab" data-toggle="tab">
+                  <p>Jun 25, 2022</p>
+                  <span>Saturday</span>
+                </a>
+              </li>
+              <li role="presentation">
+                <a href="#2" aria-controls="2" role="tab" data-toggle="tab">
+                  <p>Jun 26, 2022</p>
+                  <span>Sunday</span>
+                </a>
+              </li>
+            </ul>
+            <!-- Tab panes -->
+            <div class="tab-content">
+              <div role="tabpanel" class="tab-pane active" id="0">
+                <ul>
+                  <li>
+                    <div class="lv_schedule_details">
+                      <div class="lv_schedule_details_img">
+                        <img
+                          src="assets/images/content/es3.png"
+                          alt="Event Schedule"
+                        />
+                      </div>
+                      <div class="lv_schedule_details_text">
+                        <h3>How to make beautiful design ?</h3>
+                        <p>
+                          Proin gravida nibh vel velit auctor aliquet. Aenean
+                          sollicitudin, lorem quis bibendum the auctor, nisi
+                          elit consequat ipsum, nec sagittis sem nibh id elit...
+                        </p>
+                        <ul>
+                          <li>
+                            <img
+                              src="assets/images/content/admin.png"
+                              alt="by"
+                            />By Sunita A.
+                          </li>
+                          <li>
+                            <img
+                              src="assets/images/content/time.png"
+                              alt="time"
+                            />2:30 - 4:30
+                          </li>
+                          <li>
+                            <img
+                              src="assets/images/content/pin.png"
+                              alt="pin"
+                            />Business Hall No. 1
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="lv_schedule_details_btn">
+                        <div class="lv_btn lv_toppadder40">
+                          <a class="btn_2" href="./event-details.html"
+                            >Details</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="lv_schedule_details">
+                      <div class="lv_schedule_details_img">
+                        <img
+                          src="assets/images/content/es4.png"
+                          alt="Event Schedule"
+                        />
+                      </div>
+                      <div class="lv_schedule_details_text">
+                        <h3>How to optimize design ?</h3>
+                        <p>
+                          Proin gravida nibh vel velit auctor aliquet. Aenean
+                          sollicitudin, lorem quis bibendum the auctor, nisi
+                          elit consequat ipsum, nec sagittis sem nibh id elit...
+                        </p>
+                        <ul>
+                          <li>
+                            <img
+                              src="assets/images/content/admin.png"
+                              alt="by"
+                            />By Atish M.
+                          </li>
+                          <li>
+                            <img
+                              src="assets/images/content/time.png"
+                              alt="time"
+                            />4:30 - 6:30
+                          </li>
+                          <li>
+                            <img
+                              src="assets/images/content/pin.png"
+                              alt="pin"
+                            />Business Hall No. 1
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="lv_schedule_details_btn">
+                        <div class="lv_btn lv_toppadder40">
+                          <a class="btn_2" href="./event-details.html"
+                            >Details</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="lv_schedule_details">
+                      <div class="lv_schedule_details_img">
+                        <img
+                          src="assets/images/content/es1.png"
+                          alt="Event Schedule"
+                        />
+                      </div>
+                      <div class="lv_schedule_details_text">
+                        <h3>Welcome & Registration</h3>
+                        <p>
+                          Proin gravida nibh vel velit auctor aliquet. Aenean
+                          sollicitudin, lorem quis bibendum the auctor, nisi
+                          elit consequat ipsum, nec sagittis sem nibh id elit...
+                        </p>
+                        <ul>
+                          <li>
+                            <img
+                              src="assets/images/content/admin.png"
+                              alt="by"
+                            />By Akshay H.
+                          </li>
+                          <li>
+                            <img
+                              src="assets/images/content/time.png"
+                              alt="time"
+                            />9:30 - 11:30
+                          </li>
+                          <li>
+                            <img
+                              src="assets/images/content/pin.png"
+                              alt="pin"
+                            />Business Hall No. 1
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="lv_schedule_details_btn">
+                        <div class="lv_btn lv_toppadder40">
+                          <a class="btn_2" href="./event-details.html"
+                            >Details</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="lv_schedule_details">
+                      <div class="lv_schedule_details_img">
+                        <img
+                          src="assets/images/content/es2.png"
+                          alt="Event Schedule"
+                        />
+                      </div>
+                      <div class="lv_schedule_details_text">
+                        <h3>Introduction about event & conference</h3>
+                        <p>
+                          Proin gravida nibh vel velit auctor aliquet. Aenean
+                          sollicitudin, lorem quis bibendum the auctor, nisi
+                          elit consequat ipsum, nec sagittis sem nibh id elit...
+                        </p>
+                        <ul>
+                          <li>
+                            <img
+                              src="assets/images/content/admin.png"
+                              alt="by"
+                            />By Ajay Suy.
+                          </li>
+                          <li>
+                            <img
+                              src="assets/images/content/time.png"
+                              alt="time"
+                            />11:00 - 2:30
+                          </li>
+                          <li>
+                            <img
+                              src="assets/images/content/pin.png"
+                              alt="pin"
+                            />Business Hall No. 1
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="lv_schedule_details_btn">
+                        <div class="lv_btn lv_toppadder40">
+                          <a class="btn_2" href="./event-details.html"
+                            >Details</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div role="tabpanel" class="tab-pane" id="1">
+                <ul>
+                  <li>
+                    <div class="lv_schedule_details">
+                      <div class="lv_schedule_details_img">
+                        <img
+                          src="assets/images/content/es1.png"
+                          alt="Event Schedule"
+                        />
+                      </div>
+                      <div class="lv_schedule_details_text">
+                        <h3>Welcome & Registration</h3>
+                        <p>
+                          Proin gravida nibh vel velit auctor aliquet. Aenean
+                          sollicitudin, lorem quis bibendum the auctor, nisi
+                          elit consequat ipsum, nec sagittis sem nibh id elit...
+                        </p>
+                        <ul>
+                          <li>
+                            <img
+                              src="assets/images/content/admin.png"
+                              alt="by"
+                            />By Akshay H.
+                          </li>
+                          <li>
+                            <img
+                              src="assets/images/content/time.png"
+                              alt="time"
+                            />9:30 - 11:30
+                          </li>
+                          <li>
+                            <img
+                              src="assets/images/content/pin.png"
+                              alt="pin"
+                            />Business Hall No. 1
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="lv_schedule_details_btn">
+                        <div class="lv_btn lv_toppadder40">
+                          <a class="btn_2" href="./event-details.html"
+                            >Details</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="lv_schedule_details">
+                      <div class="lv_schedule_details_img">
+                        <img
+                          src="assets/images/content/es2.png"
+                          alt="Event Schedule"
+                        />
+                      </div>
+                      <div class="lv_schedule_details_text">
+                        <h3>Introduction about event & conference</h3>
+                        <p>
+                          Proin gravida nibh vel velit auctor aliquet. Aenean
+                          sollicitudin, lorem quis bibendum the auctor, nisi
+                          elit consequat ipsum, nec sagittis sem nibh id elit...
+                        </p>
+                        <ul>
+                          <li>
+                            <img
+                              src="assets/images/content/admin.png"
+                              alt="by"
+                            />By Ajay Suy.
+                          </li>
+                          <li>
+                            <img
+                              src="assets/images/content/time.png"
+                              alt="time"
+                            />11:00 - 2:30
+                          </li>
+                          <li>
+                            <img
+                              src="assets/images/content/pin.png"
+                              alt="pin"
+                            />Business Hall No. 1
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="lv_schedule_details_btn">
+                        <div class="lv_btn lv_toppadder40">
+                          <a class="btn_2" href="./event-details.html"
+                            >Details</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="lv_schedule_details">
+                      <div class="lv_schedule_details_img">
+                        <img
+                          src="assets/images/content/es3.png"
+                          alt="Event Schedule"
+                        />
+                      </div>
+                      <div class="lv_schedule_details_text">
+                        <h3>How to make beautiful design ?</h3>
+                        <p>
+                          Proin gravida nibh vel velit auctor aliquet. Aenean
+                          sollicitudin, lorem quis bibendum the auctor, nisi
+                          elit consequat ipsum, nec sagittis sem nibh id elit...
+                        </p>
+                        <ul>
+                          <li>
+                            <img
+                              src="assets/images/content/admin.png"
+                              alt="by"
+                            />By Sunita A.
+                          </li>
+                          <li>
+                            <img
+                              src="assets/images/content/time.png"
+                              alt="time"
+                            />2:30 - 4:30
+                          </li>
+                          <li>
+                            <img
+                              src="assets/images/content/pin.png"
+                              alt="pin"
+                            />Business Hall No. 1
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="lv_schedule_details_btn">
+                        <div class="lv_btn lv_toppadder40">
+                          <a class="btn_2" href="./event-details.html"
+                            >Details</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="lv_schedule_details">
+                      <div class="lv_schedule_details_img">
+                        <img
+                          src="assets/images/content/es4.png"
+                          alt="Event Schedule"
+                        />
+                      </div>
+                      <div class="lv_schedule_details_text">
+                        <h3>How to optimize design ?</h3>
+                        <p>
+                          Proin gravida nibh vel velit auctor aliquet. Aenean
+                          sollicitudin, lorem quis bibendum the auctor, nisi
+                          elit consequat ipsum, nec sagittis sem nibh id elit...
+                        </p>
+                        <ul>
+                          <li>
+                            <img
+                              src="assets/images/content/admin.png"
+                              alt="by"
+                            />By Atish M.
+                          </li>
+                          <li>
+                            <img
+                              src="assets/images/content/time.png"
+                              alt="time"
+                            />4:30 - 6:30
+                          </li>
+                          <li>
+                            <img
+                              src="assets/images/content/pin.png"
+                              alt="pin"
+                            />Business Hall No. 1
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="lv_schedule_details_btn">
+                        <div class="lv_btn lv_toppadder40">
+                          <a class="btn_2" href="./event-details.html"
+                            >Details</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div role="tabpanel" class="tab-pane" id="2">
+                <ul>
+                  <li>
+                    <div class="lv_schedule_details">
+                      <div class="lv_schedule_details_img">
+                        <img
+                          src="assets/images/content/es2.png"
+                          alt="Event Schedule"
+                        />
+                      </div>
+                      <div class="lv_schedule_details_text">
+                        <h3>Introduction about event & conference</h3>
+                        <p>
+                          Proin gravida nibh vel velit auctor aliquet. Aenean
+                          sollicitudin, lorem quis bibendum the auctor, nisi
+                          elit consequat ipsum, nec sagittis sem nibh id elit...
+                        </p>
+                        <ul>
+                          <li>
+                            <img
+                              src="assets/images/content/admin.png"
+                              alt="by"
+                            />By Ajay Suy.
+                          </li>
+                          <li>
+                            <img
+                              src="assets/images/content/time.png"
+                              alt="time"
+                            />11:00 - 2:30
+                          </li>
+                          <li>
+                            <img
+                              src="assets/images/content/pin.png"
+                              alt="pin"
+                            />Business Hall No. 1
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="lv_schedule_details_btn">
+                        <div class="lv_btn lv_toppadder40">
+                          <a class="btn_2" href="./event-details.html"
+                            >Details</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="lv_schedule_details">
+                      <div class="lv_schedule_details_img">
+                        <img
+                          src="assets/images/content/es3.png"
+                          alt="Event Schedule"
+                        />
+                      </div>
+                      <div class="lv_schedule_details_text">
+                        <h3>How to make beautiful design ?</h3>
+                        <p>
+                          Proin gravida nibh vel velit auctor aliquet. Aenean
+                          sollicitudin, lorem quis bibendum the auctor, nisi
+                          elit consequat ipsum, nec sagittis sem nibh id elit...
+                        </p>
+                        <ul>
+                          <li>
+                            <img
+                              src="assets/images/content/admin.png"
+                              alt="by"
+                            />By Sunita A.
+                          </li>
+                          <li>
+                            <img
+                              src="assets/images/content/time.png"
+                              alt="time"
+                            />2:30 - 4:30
+                          </li>
+                          <li>
+                            <img
+                              src="assets/images/content/pin.png"
+                              alt="pin"
+                            />Business Hall No. 1
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="lv_schedule_details_btn">
+                        <div class="lv_btn lv_toppadder40">
+                          <a class="btn_2" href="./event-details.html"
+                            >Details</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="lv_schedule_details">
+                      <div class="lv_schedule_details_img">
+                        <img
+                          src="assets/images/content/es4.png"
+                          alt="Event Schedule"
+                        />
+                      </div>
+                      <div class="lv_schedule_details_text">
+                        <h3>How to optimize design ?</h3>
+                        <p>
+                          Proin gravida nibh vel velit auctor aliquet. Aenean
+                          sollicitudin, lorem quis bibendum the auctor, nisi
+                          elit consequat ipsum, nec sagittis sem nibh id elit...
+                        </p>
+                        <ul>
+                          <li>
+                            <img
+                              src="assets/images/content/admin.png"
+                              alt="by"
+                            />By Atish M.
+                          </li>
+                          <li>
+                            <img
+                              src="assets/images/content/time.png"
+                              alt="time"
+                            />4:30 - 6:30
+                          </li>
+                          <li>
+                            <img
+                              src="assets/images/content/pin.png"
+                              alt="pin"
+                            />Business Hall No. 1
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="lv_schedule_details_btn">
+                        <div class="lv_btn lv_toppadder40">
+                          <a class="btn_2" href="./event-details.html"
+                            >Details</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="lv_schedule_details">
+                      <div class="lv_schedule_details_img">
+                        <img
+                          src="assets/images/content/es1.png"
+                          alt="Event Schedule"
+                        />
+                      </div>
+                      <div class="lv_schedule_details_text">
+                        <h3>Welcome & Registration</h3>
+                        <p>
+                          Proin gravida nibh vel velit auctor aliquet. Aenean
+                          sollicitudin, lorem quis bibendum the auctor, nisi
+                          elit consequat ipsum, nec sagittis sem nibh id elit...
+                        </p>
+                        <ul>
+                          <li>
+                            <img
+                              src="assets/images/content/admin.png"
+                              alt="by"
+                            />By Akshay H.
+                          </li>
+                          <li>
+                            <img
+                              src="assets/images/content/time.png"
+                              alt="time"
+                            />9:30 - 11:30
+                          </li>
+                          <li>
+                            <img
+                              src="assets/images/content/pin.png"
+                              alt="pin"
+                            />Business Hall No. 1
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="lv_schedule_details_btn">
+                        <div class="lv_btn lv_toppadder40">
+                          <a class="btn_2" href="./event-details.html"
+                            >Details</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <div class="lv_btn lv_toppadder60 text-center">
+            <a class="btn_2" href="#"
+              ><i class="fa fa-download" aria-hidden="true"></i> download
+              schedule</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Event Schedule Wrapper End -->
+{% endblock events %} {% block content %}
+<!-- Speakers Wrapper Start -->
+<div data-scroll-index="3" id="members" style="width: 100%; float: left">
+  <div class="lv_speakers_wrapper lv_toppadder100 lv_bottompadder100">
+    <div class="lv_img_overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div
+          class="col-lg-8 col-md-8 col-sm-12 col-xs-12 col-lg-offset-2 col-md-offset-2 lv_full_width"
+        >
+          <div class="lv_heading_center">
+            <h1>Our members</h1>
+            <p>
+              Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin,
+              lorem quis bibendum auctor, nisi elit consequat ipsum, nec
+              sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate
+              cursus.
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
+          <div class="lv_speakers_box">
+            <div class="lv_speakers_box_img">
+              <img src="assets/images/content/sp1.jpg" alt="speak" />
+              <div class="lv_speakers_box_social">
+                <ul>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-facebook" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-twitter" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-behance" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-linkedin" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="lv_speakers_box_text">
+              <h3>Mr. Jhon Doe</h3>
+              <p>(CEO, liveevent)</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
+          <div class="lv_speakers_box">
+            <div class="lv_speakers_box_img">
+              <img src="assets/images/content/sp2.jpg" alt="speak" />
+              <div class="lv_speakers_box_social">
+                <ul>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-facebook" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-twitter" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-behance" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-linkedin" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="lv_speakers_box_text">
+              <h3>Mr. Thomas</h3>
+              <p>(CEO, liveevent)</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
+          <div class="lv_speakers_box">
+            <div class="lv_speakers_box_img">
+              <img src="assets/images/content/sp3.jpg" alt="speak" />
+              <div class="lv_speakers_box_social">
+                <ul>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-facebook" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-twitter" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-behance" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-linkedin" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="lv_speakers_box_text">
+              <h3>Mr. Williom Max</h3>
+              <p>(CEO, liveevent)</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
+          <div class="lv_speakers_box">
+            <div class="lv_speakers_box_img">
+              <img src="assets/images/content/sp4.jpg" alt="speak" />
+              <div class="lv_speakers_box_social">
+                <ul>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-facebook" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-twitter" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-behance" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-linkedin" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="lv_speakers_box_text">
+              <h3>Mrs. Sunshine</h3>
+              <p>(CEO, liveevent)</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
+          <div class="lv_speakers_box">
+            <div class="lv_speakers_box_img">
+              <img src="assets/images/content/sp5.jpg" alt="speak" />
+              <div class="lv_speakers_box_social">
+                <ul>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-facebook" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-twitter" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-behance" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-linkedin" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="lv_speakers_box_text">
+              <h3>Mr. Maxwell</h3>
+              <p>(CEO, liveevent)</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
+          <div class="lv_speakers_box">
+            <div class="lv_speakers_box_img">
+              <img src="assets/images/content/sp6.jpg" alt="speak" />
+              <div class="lv_speakers_box_social">
+                <ul>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-facebook" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-twitter" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-behance" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-linkedin" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="lv_speakers_box_text">
+              <h3>Mrs. Joaana</h3>
+              <p>(CEO, liveevent)</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
+          <div class="lv_speakers_box">
+            <div class="lv_speakers_box_img">
+              <img src="assets/images/content/sp7.jpg" alt="speak" />
+              <div class="lv_speakers_box_social">
+                <ul>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-facebook" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-twitter" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-behance" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-linkedin" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="lv_speakers_box_text">
+              <h3>Mr. Robot Dev</h3>
+              <p>(CEO, liveevent)</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
+          <div class="lv_speakers_box">
+            <div class="lv_speakers_box_img">
+              <img src="assets/images/content/sp8.jpg" alt="speak" />
+              <div class="lv_speakers_box_social">
+                <ul>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-facebook" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-twitter" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-behance" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-linkedin" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="lv_speakers_box_text">
+              <h3>Mrs. Rose Doe</h3>
+              <p>(CEO, liveevent)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <div class="lv_btn lv_toppadder30 text-center">
+          <a href="/members">See All</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Speakers Wrapper End -->
+{% endblock content %} {% block FAQ %}
+<!-- FAQ Wrapper Start -->
+<div data-scroll-index="4" id="faq" style="width: 100%; float: left">
+  <div class="lv_faq_wrapper lv_toppadder100 lv_bottompadder100">
+    <div class="container">
+      <div class="row">
+        <div
+          class="col-lg-8 col-md-8 col-sm-12 col-xs-12 col-lg-offset-2 col-md-offset-2"
+        >
+          <div class="lv_heading_center">
+            <h1>FAQ</h1>
+          </div>
+        </div>
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <div class="accordionFifteen">
+            <div class="panel-group" id="accordionFifteenLeft" role="tablist">
+              <div class="panel panel-default lv_border_top_radius">
+                <div class="panel-heading desktop">
+                  <h4 class="panel-title">
+                    <a
+                      data-toggle="collapse"
+                      data-parent="#accordionFifteenLeft"
+                      href="#collapseFifteenLeftone"
+                      aria-expanded="true"
+                      class="lv_border_top_radius"
+                    >
+                      De quoi s'agit-il ?</a
+                    >
+                  </h4>
+                </div>
+                <div
+                  id="collapseFifteenLeftone"
+                  class="panel-collapse collapse in"
+                  aria-expanded="true"
+                  role="tabpanel"
+                >
+                  <div class="panel-body">
+                    Nice est une compétition nationale sous le thème «
+                    entrepreneuriat et innovation » intitulée « NATIONAL
+                    INNOVATION COMPETITION FOR ENTREPRENEURSHIP ». Organisé le
+                    25 et le 26 juin aux établissements de l’université Hassan
+                    premier, qui abriteront au surplus de la compétition, des
+                    formations, conférences et ateliers.
+                  </div>
+                </div>
+              </div>
+              <!-- /.panel-default -->
+              <div class="panel panel-default">
+                <div class="panel-heading horn">
+                  <h4 class="panel-title">
+                    <a
+                      class="collapsed"
+                      data-toggle="collapse"
+                      data-parent="#accordionFifteenLeft"
+                      href="#collapseFifteenLeftTwo"
+                      aria-expanded="false"
+                      >Pourquoi l’ « entrepreneuriat et l’innovation » ?</a
+                    >
+                  </h4>
+                </div>
+                <div
+                  id="collapseFifteenLeftTwo"
+                  class="panel-collapse collapse"
+                  aria-expanded="false"
+                  style="height: 0px"
+                  role="tabpanel"
+                >
+                  <div class="panel-body">
+                    L’entrepreneuriat et l’innovation sont des concepts dont les
+                    frontières se sont grandement élargies au cours des
+                    dernières décennies. Ils en occupent désormais les rouages
+                    essentiels du monde des affaires contemporain, d’où
+                    l’importance capitale d’en apprendre davantage.
+                  </div>
+                </div>
+              </div>
+              <!-- /.panel-default -->
+              <div class="panel panel-default">
+                <div class="panel-heading bell">
+                  <h4 class="panel-title">
+                    <a
+                      class="collapsed"
+                      data-toggle="collapse"
+                      data-parent="#accordionFifteenLeft"
+                      href="#collapseFifteenLeftThree"
+                      aria-expanded="false"
+                      >Quel est l’intérêt ?</a
+                    >
+                  </h4>
+                </div>
+                <div
+                  id="collapseFifteenLeftThree"
+                  class="panel-collapse collapse"
+                  aria-expanded="false"
+                  style="height: 0px"
+                  role="tabpanel"
+                >
+                  <div class="panel-body">
+                    L’événement présente un double intérêt, à la fois théorique
+                    et pratique. Il vise très particulièrement à conforter les
+                    jeunes dans leur démarche entrepreneuriale par la mise en
+                    place d’un programme leur permettant de développer le
+                    savoir, les compétences et l'inspiration pour entreprendre
+                    des projets innovants.
+                  </div>
+                </div>
+              </div>
+              <!-- /.panel-default -->
+              <div class="panel panel-default">
+                <div class="panel-heading bell">
+                  <h4 class="panel-title">
+                    <a
+                      class="collapsed"
+                      data-toggle="collapse"
+                      data-parent="#accordionFifteenLeft"
+                      href="#collapseFifteenLeftFour"
+                      aria-expanded="false"
+                      >Qui est concerné ?</a
+                    >
+                  </h4>
+                </div>
+                <div
+                  id="collapseFifteenLeftFour"
+                  class="panel-collapse collapse"
+                  aria-expanded="false"
+                  style="height: 0px"
+                  role="tabpanel"
+                >
+                  <div class="panel-body">
+                    NICE est à l’intention des étudiants du cycle supérieur
+                    inscrits dans les différents établissements d’enseignement
+                    supérieur au niveau national. Très particulièrement des
+                    porteurs de projets ou des passionnés d’entrepreneuriat.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--end of /.panel-group-->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- FAQ Wrapper End -->
+  <!-- Video Wrapper Start -->
+  <div class="lv_video_wrapper lv_toppadder100 lv_bottompadder100" hidden>
+    <div class="lv_img_overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="lv_video_box">
+            <h1>Old Memories</h1>
+            <h2>Are You Ready <span>Joing Our Event programs ?</span></h2>
+            <div class="clearfix"></div>
+            <p>
+              <a
+                class="popup-youtube"
+                href="https://www.youtube.com/embed/xImpyYRVGOc"
+                ><img src="assets/images/content/play.png" alt="Play" /> play
+                video</a
+              >
+            </p>
+            <div class="lv_btn">
+              <a class="btn" href="#">join us!</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Video Wrapper End -->
+{% endblock FAQ %} {% block sponsors %}
+<!-- Sponsors Wrapper Start -->
+<div data-scroll-index="6" id="sponsors" style="width: 100%; float: left">
+  <div class="lv_sponsors_wrapper lv_toppadder100 lv_bottompadder100">
+    <div class="container">
+      <div class="row">
+        <div
+          class="col-lg-8 col-md-8 col-sm-12 col-xs-12 col-lg-offset-2 col-md-offset-2"
+        >
+          <div class="lv_heading_center">
+            <h1>Our Event Sponsors</h1>
+          </div>
+        </div>
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <div class="lv_sponsors_box">
+            <ul>
+              <li>
+                <ul>
+                  <li>
+                    <img src="assets/images/content/spo1.png" alt="sponsors" />
+                  </li>
+                  <li>
+                    <img src="assets/images/content/spo2.png" alt="sponsors" />
+                  </li>
+                  <li>
+                    <img src="assets/images/content/spo3.png" alt="sponsors" />
+                  </li>
+                  <li>
+                    <img src="assets/images/content/spo4.png" alt="sponsors" />
+                  </li>
+                  <li>
+                    <img src="assets/images/content/spo5.png" alt="sponsors" />
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li>
+                    <img src="assets/images/content/spo6.png" alt="sponsors" />
+                  </li>
+                  <li>
+                    <img src="assets/images/content/spo7.png" alt="sponsors" />
+                  </li>
+                  <li>
+                    <img src="assets/images/content/spo8.png" alt="sponsors" />
+                  </li>
+                  <li>
+                    <img src="assets/images/content/spo9.png" alt="sponsors" />
+                  </li>
+                  <li>
+                    <img src="assets/images/content/spo10.png" alt="sponsors" />
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="lv_btn lv_toppadder80 text-center">
+            <a class="btn" href="#">Become a Sponsor</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock sponsors %} {% endblock presentation%}

@@ -1,0 +1,496 @@
+/* latin-ext */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Lato Light'), local('Lato-Light'), url(../fonts/lato/v13/dPJ5r9gl3kK6ijoeP1IRsvY6323mHUZFJMgTvxaG2iE.woff) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Lato Light'), local('Lato-Light'), url(../fonts/lato/v13/EsvMC5un3kjyUhB9ZEPPwg.woff) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'), url(../fonts/lato/v13/UyBMtLsHKBKXelqf4x7VRQ.woff) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'), url(../fonts/lato/v13/1YwB1sO8YE1Lyjf12WNiUA.woff) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Lato Bold'), local('Lato-Bold'), url(../fonts/lato/v13/ObQr5XYcoH0WBoUxiaYK3_Y6323mHUZFJMgTvxaG2iE.woff) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Lato Bold'), local('Lato-Bold'), url(../fonts/lato/v13/H2DMvhDLycM56KNuAtbJYA.woff) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 900;
+  src: local('Lato Black'), local('Lato-Black'), url(../fonts/lato/v13/R4a6fty3waPci7C44H8AjvY6323mHUZFJMgTvxaG2iE.woff) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 900;
+  src: local('Lato Black'), local('Lato-Black'), url(../fonts/lato/v13/tI4j516nok_GrVf4dhunkg.woff) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 300;
+  src: local('Lato Light Italic'), local('Lato-LightItalic'), url(../fonts/lato/v13/XNVd6tsqi9wmKNvnh5HNEBJtnKITppOI_IvcXXDNrsc.woff) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 300;
+  src: local('Lato Light Italic'), local('Lato-LightItalic'), url(../fonts/lato/v13/2HG_tEPiQ4Z6795cGfdivFtXRa8TVwTICgirnJhmVJw.woff) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Lato Italic'), local('Lato-Italic'), url(../fonts/lato/v13/YMOYVM-eg6Qs9YzV9OSqZfesZW2xOQ-xsNqO47m55DA.woff) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Lato Italic'), local('Lato-Italic'), url(../fonts/lato/v13/PLygLKRVCQnA5fhu3qk5fQ.woff) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Lato Bold Italic'), local('Lato-BoldItalic'), url(../fonts/lato/v13/AcvTq8Q0lyKKNxRlL28RnxJtnKITppOI_IvcXXDNrsc.woff) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Lato Bold Italic'), local('Lato-BoldItalic'), url(../fonts/lato/v13/HkF_qI1x_noxlxhrhMQYEFtXRa8TVwTICgirnJhmVJw.woff) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 900;
+  src: local('Lato Black Italic'), local('Lato-BlackItalic'), url(../fonts/lato/v13/81X-1TO5y4aMK2PPy9kFwxJtnKITppOI_IvcXXDNrsc.woff) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 900;
+  src: local('Lato Black Italic'), local('Lato-BlackItalic'), url(../fonts/lato/v13/VNUH7ZAcagYBWsAiBBCEY1tXRa8TVwTICgirnJhmVJw.woff) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Montserrat Alternates';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Montserrat Alternates Light'), local('MontserratAlternates-Light'), url(../fonts/montserratalternates/v7/YENqOGAVzwIHjYNjmKuAZpstOHYBbVn6EFQArIhuB-0U24FapfJwyacJ6xNu5rm9.woff) format('woff2');
+  unicode-range: U+0102-0103, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Montserrat Alternates';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Montserrat Alternates Light'), local('MontserratAlternates-Light'), url(../fonts/montserratalternates/v7/YENqOGAVzwIHjYNjmKuAZoW7eWt1xNGHITycPEBM9SsU24FapfJwyacJ6xNu5rm9.woff) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Montserrat Alternates';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Montserrat Alternates Light'), local('MontserratAlternates-Light'), url(../fonts/montserratalternates/v7/YENqOGAVzwIHjYNjmKuAZgPf5UelftEYW8VnBYozE5r3rGVtsTkPsbDajuO5ueQw.woff) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Montserrat Alternates';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Montserrat Alternates Regular'), local('MontserratAlternates-Regular'), url(../fonts/montserratalternates/v7/z2n1Sjxk9souK3HCtdHukh2IngJzWcPT5W0V3nD-4dg.woff) format('woff2');
+  unicode-range: U+0102-0103, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Montserrat Alternates';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Montserrat Alternates Regular'), local('MontserratAlternates-Regular'), url(../fonts/montserratalternates/v7/z2n1Sjxk9souK3HCtdHuksk3T0zDZptq2_3paB0vlqg.woff) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Montserrat Alternates';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Montserrat Alternates Regular'), local('MontserratAlternates-Regular'), url(../fonts/montserratalternates/v7/z2n1Sjxk9souK3HCtdHukpy2IC1KoJIC5P3EDKbgI_s.woff) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Montserrat Alternates';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Montserrat Alternates Medium'), local('MontserratAlternates-Medium'), url(../fonts/montserratalternates/v7/YENqOGAVzwIHjYNjmKuAZoWBOOaMC3zYE3tD5IMMEv0U24FapfJwyacJ6xNu5rm9.woff) format('woff2');
+  unicode-range: U+0102-0103, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Montserrat Alternates';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Montserrat Alternates Medium'), local('MontserratAlternates-Medium'), url(../fonts/montserratalternates/v7/YENqOGAVzwIHjYNjmKuAZq-54TURypL0_hLp2TXsCm0U24FapfJwyacJ6xNu5rm9.woff) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Montserrat Alternates';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Montserrat Alternates Medium'), local('MontserratAlternates-Medium'), url(../fonts/montserratalternates/v7/YENqOGAVzwIHjYNjmKuAZp7jbOmvYQnuQIP7VLOrgJ_3rGVtsTkPsbDajuO5ueQw.woff) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Montserrat Alternates';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Montserrat Alternates SemiBold'), local('MontserratAlternates-SemiBold'), url(../fonts/montserratalternates/v7/YENqOGAVzwIHjYNjmKuAZhA4mU-OPMr0kJD426cx1CgU24FapfJwyacJ6xNu5rm9.woff) format('woff2');
+  unicode-range: U+0102-0103, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Montserrat Alternates';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Montserrat Alternates SemiBold'), local('MontserratAlternates-SemiBold'), url(../fonts/montserratalternates/v7/YENqOGAVzwIHjYNjmKuAZiq6Sn7UX5N5Ac-f2FQLXgwU24FapfJwyacJ6xNu5rm9.woff) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Montserrat Alternates';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Montserrat Alternates SemiBold'), local('MontserratAlternates-SemiBold'), url(../fonts/montserratalternates/v7/YENqOGAVzwIHjYNjmKuAZmiyvZyAx6G8LkMARSqsb0b3rGVtsTkPsbDajuO5ueQw.woff) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Montserrat Alternates';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Montserrat Alternates Bold'), local('MontserratAlternates-Bold'), url(../fonts/montserratalternates/v7/YENqOGAVzwIHjYNjmKuAZslGGUgq_Pce1eDQibw_74MU24FapfJwyacJ6xNu5rm9.woff) format('woff2');
+  unicode-range: U+0102-0103, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Montserrat Alternates';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Montserrat Alternates Bold'), local('MontserratAlternates-Bold'), url(../fonts/montserratalternates/v7/YENqOGAVzwIHjYNjmKuAZmGV7ej4JEUFYzNIC2vQifwU24FapfJwyacJ6xNu5rm9.woff) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Montserrat Alternates';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Montserrat Alternates Bold'), local('MontserratAlternates-Bold'), url(../fonts/montserratalternates/v7/YENqOGAVzwIHjYNjmKuAZmksDjUaR4oq4rjDTNt60Dr3rGVtsTkPsbDajuO5ueQw.woff) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Montserrat Alternates';
+  font-style: normal;
+  font-weight: 800;
+  src: local('Montserrat Alternates ExtraBold'), local('MontserratAlternates-ExtraBold'), url(../fonts/montserratalternates/v7/YENqOGAVzwIHjYNjmKuAZv0-URqbKtI5omzvRVstF8AU24FapfJwyacJ6xNu5rm9.woff) format('woff2');
+  unicode-range: U+0102-0103, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Montserrat Alternates';
+  font-style: normal;
+  font-weight: 800;
+  src: local('Montserrat Alternates ExtraBold'), local('MontserratAlternates-ExtraBold'), url(../fonts/montserratalternates/v7/YENqOGAVzwIHjYNjmKuAZtfJkX0vmFYHPjslTf77L5MU24FapfJwyacJ6xNu5rm9.woff) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Montserrat Alternates';
+  font-style: normal;
+  font-weight: 800;
+  src: local('Montserrat Alternates ExtraBold'), local('MontserratAlternates-ExtraBold'), url(../fonts/montserratalternates/v7/YENqOGAVzwIHjYNjmKuAZj2z-qxic7nBU-by-PWntG33rGVtsTkPsbDajuO5ueQw.woff) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Montserrat Alternates';
+  font-style: normal;
+  font-weight: 900;
+  src: local('Montserrat Alternates Black'), local('MontserratAlternates-Black'), url(../fonts/montserratalternates/v7/YENqOGAVzwIHjYNjmKuAZpbUGIIJLC2_7sOqMqoClMgU24FapfJwyacJ6xNu5rm9.woff) format('woff2');
+  unicode-range: U+0102-0103, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Montserrat Alternates';
+  font-style: normal;
+  font-weight: 900;
+  src: local('Montserrat Alternates Black'), local('MontserratAlternates-Black'), url(../fonts/montserratalternates/v7/YENqOGAVzwIHjYNjmKuAZrMPUvm9J6VhAumeWthEqI0U24FapfJwyacJ6xNu5rm9.woff) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Montserrat Alternates';
+  font-style: normal;
+  font-weight: 900;
+  src: local('Montserrat Alternates Black'), local('MontserratAlternates-Black'), url(../fonts/montserratalternates/v7/YENqOGAVzwIHjYNjmKuAZnA2ZY9of6ew-xCNNr-RkLz3rGVtsTkPsbDajuO5ueQw.woff) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Montserrat Alternates';
+  font-style: italic;
+  font-weight: 300;
+  src: local('Montserrat Alternates Light Italic'), local('MontserratAlternates-LightItalic'), url(../fonts/montserratalternates/v7/AXzeb8s80Wvg1Wkw1cVlAatXEDuBH7pfJeiuB26BgRohAL7Yfy5a3xPNAmHUh-O8.woff) format('woff2');
+  unicode-range: U+0102-0103, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Montserrat Alternates';
+  font-style: italic;
+  font-weight: 300;
+  src: local('Montserrat Alternates Light Italic'), local('MontserratAlternates-LightItalic'), url(../fonts/montserratalternates/v7/AXzeb8s80Wvg1Wkw1cVlAdifUPh3rlrIBaWKWoUoAIMhAL7Yfy5a3xPNAmHUh-O8.woff) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Montserrat Alternates';
+  font-style: italic;
+  font-weight: 300;
+  src: local('Montserrat Alternates Light Italic'), local('MontserratAlternates-LightItalic'), url(../fonts/montserratalternates/v7/AXzeb8s80Wvg1Wkw1cVlAXxbxjlGGtjHCw1sviBHvtD5P7wK4alSGdJ7_atPdITf.woff) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Montserrat Alternates';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Montserrat Alternates Italic'), local('MontserratAlternates-Italic'), url(../fonts/montserratalternates/v7/oqQkJ7FUCF9bJw9oNhwplo4aVjsLxYwYecYp9PFx5ZD2Ot9t5h1GRSTIE78Whtoh.woff) format('woff2');
+  unicode-range: U+0102-0103, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Montserrat Alternates';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Montserrat Alternates Italic'), local('MontserratAlternates-Italic'), url(../fonts/montserratalternates/v7/oqQkJ7FUCF9bJw9oNhwplihErlDoE4I8JhYi4DXCIXL2Ot9t5h1GRSTIE78Whtoh.woff) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Montserrat Alternates';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Montserrat Alternates Italic'), local('MontserratAlternates-Italic'), url(../fonts/montserratalternates/v7/oqQkJ7FUCF9bJw9oNhwpluyk5JhFZ1XPw5fT_zWu02Y.woff) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Montserrat Alternates';
+  font-style: italic;
+  font-weight: 500;
+  src: local('Montserrat Alternates Medium Italic'), local('MontserratAlternates-MediumItalic'), url(../fonts/montserratalternates/v7/AXzeb8s80Wvg1Wkw1cVlAVZcmlZQAoCiff-gsQIiz8shAL7Yfy5a3xPNAmHUh-O8.woff) format('woff2');
+  unicode-range: U+0102-0103, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Montserrat Alternates';
+  font-style: italic;
+  font-weight: 500;
+  src: local('Montserrat Alternates Medium Italic'), local('MontserratAlternates-MediumItalic'), url(../fonts/montserratalternates/v7/AXzeb8s80Wvg1Wkw1cVlAauzIAN4z11ZuEaOEaouEkQhAL7Yfy5a3xPNAmHUh-O8.woff) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Montserrat Alternates';
+  font-style: italic;
+  font-weight: 500;
+  src: local('Montserrat Alternates Medium Italic'), local('MontserratAlternates-MediumItalic'), url(../fonts/montserratalternates/v7/AXzeb8s80Wvg1Wkw1cVlAQGeOFmuWY2trjADWyy4xtb5P7wK4alSGdJ7_atPdITf.woff) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Montserrat Alternates';
+  font-style: italic;
+  font-weight: 600;
+  src: local('Montserrat Alternates SemiBold Italic'), local('MontserratAlternates-SemiBoldItalic'), url(../fonts/montserratalternates/v7/AXzeb8s80Wvg1Wkw1cVlAdo1OCZeNtf_VGOW-aarF1ohAL7Yfy5a3xPNAmHUh-O8.woff) format('woff2');
+  unicode-range: U+0102-0103, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Montserrat Alternates';
+  font-style: italic;
+  font-weight: 600;
+  src: local('Montserrat Alternates SemiBold Italic'), local('MontserratAlternates-SemiBoldItalic'), url(../fonts/montserratalternates/v7/AXzeb8s80Wvg1Wkw1cVlAbPOtvTr0Z08UR2pgIQuOs8hAL7Yfy5a3xPNAmHUh-O8.woff) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Montserrat Alternates';
+  font-style: italic;
+  font-weight: 600;
+  src: local('Montserrat Alternates SemiBold Italic'), local('MontserratAlternates-SemiBoldItalic'), url(../fonts/montserratalternates/v7/AXzeb8s80Wvg1Wkw1cVlAVpHt0VRud2VFCElZXwxzuf5P7wK4alSGdJ7_atPdITf.woff) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Montserrat Alternates';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Montserrat Alternates Bold Italic'), local('MontserratAlternates-BoldItalic'), url(../fonts/montserratalternates/v7/AXzeb8s80Wvg1Wkw1cVlAdVTyCCcShutcUtRY2JkFSMhAL7Yfy5a3xPNAmHUh-O8.woff) format('woff2');
+  unicode-range: U+0102-0103, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Montserrat Alternates';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Montserrat Alternates Bold Italic'), local('MontserratAlternates-BoldItalic'), url(../fonts/montserratalternates/v7/AXzeb8s80Wvg1Wkw1cVlAW_4UTq2qEZV8S4ljiMyO38hAL7Yfy5a3xPNAmHUh-O8.woff) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Montserrat Alternates';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Montserrat Alternates Bold Italic'), local('MontserratAlternates-BoldItalic'), url(../fonts/montserratalternates/v7/AXzeb8s80Wvg1Wkw1cVlAet8yGZvygMi6nHwhm1N8T_5P7wK4alSGdJ7_atPdITf.woff) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Montserrat Alternates';
+  font-style: italic;
+  font-weight: 800;
+  src: local('Montserrat Alternates ExtraBold Italic'), local('MontserratAlternates-ExtraBoldItalic'), url(../fonts/montserratalternates/v7/AXzeb8s80Wvg1Wkw1cVlAb-tlx0j2w1Lowi_QM4NAhshAL7Yfy5a3xPNAmHUh-O8.woff) format('woff2');
+  unicode-range: U+0102-0103, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Montserrat Alternates';
+  font-style: italic;
+  font-weight: 800;
+  src: local('Montserrat Alternates ExtraBold Italic'), local('MontserratAlternates-ExtraBoldItalic'), url(../fonts/montserratalternates/v7/AXzeb8s80Wvg1Wkw1cVlAZnd9cmyl-En0G8ABGzIxjshAL7Yfy5a3xPNAmHUh-O8.woff) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Montserrat Alternates';
+  font-style: italic;
+  font-weight: 800;
+  src: local('Montserrat Alternates ExtraBold Italic'), local('MontserratAlternates-ExtraBoldItalic'), url(../fonts/montserratalternates/v7/AXzeb8s80Wvg1Wkw1cVlAR2j5gbe9Hr6wWK8YFlJSB35P7wK4alSGdJ7_atPdITf.woff) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Montserrat Alternates';
+  font-style: italic;
+  font-weight: 900;
+  src: local('Montserrat Alternates Black Italic'), local('MontserratAlternates-BlackItalic'), url(../fonts/montserratalternates/v7/AXzeb8s80Wvg1Wkw1cVlAdlTAlXKvMD-31YPs0hyjZAhAL7Yfy5a3xPNAmHUh-O8.woff) format('woff2');
+  unicode-range: U+0102-0103, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Montserrat Alternates';
+  font-style: italic;
+  font-weight: 900;
+  src: local('Montserrat Alternates Black Italic'), local('MontserratAlternates-BlackItalic'), url(../fonts/montserratalternates/v7/AXzeb8s80Wvg1Wkw1cVlAaYLamhslg38EnfYqdxxAJAhAL7Yfy5a3xPNAmHUh-O8.woff) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Montserrat Alternates';
+  font-style: italic;
+  font-weight: 900;
+  src: local('Montserrat Alternates Black Italic'), local('MontserratAlternates-BlackItalic'), url(../fonts/montserratalternates/v7/AXzeb8s80Wvg1Wkw1cVlAYotXBxWqVSDqRjBmr0ynOj5P7wK4alSGdJ7_atPdITf.woff) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Oswald Regular'), local('Oswald-Regular'), url(../fonts/oswald/v13/DgBpgaYycijFA8v2hNt7MfesZW2xOQ-xsNqO47m55DA.woff) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Oswald Regular'), local('Oswald-Regular'), url(../fonts/oswald/v13/peRd8sj511qE2lHtK-QfcPesZW2xOQ-xsNqO47m55DA.woff) format('woff2');
+  unicode-range: U+0102-0103, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Oswald Regular'), local('Oswald-Regular'), url(../fonts/oswald/v13/yg0glPPxXUISnKUejCX4qfesZW2xOQ-xsNqO47m55DA.woff) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Oswald Regular'), local('Oswald-Regular'), url(../fonts/oswald/v13/pEobIV_lL25TKBpqVI_a2w.woff) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
