@@ -7,7 +7,7 @@ from .views import *
 urlpatterns=[
     
     path('',index),
-    path('event/<id>',getEvent),
+    path('event/<id>',getEvent , name='getEvent'),
     path('members',getMembers),
 
     

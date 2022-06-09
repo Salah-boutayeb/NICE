@@ -17,12 +17,14 @@ def index(request):
         # event_info['speakers']=event.speaker_set.all()
         
         events_obj['events'].append(event_info)
+      
 
     # sponsors
     sponsors = Sponsor.objects.all()
     # members only chefs for the moments
     chefs_obj =[]
     members=Member.objects.all()
+    chefs_obj = members
     
         # if member.cell_set.filter(role="chef") or member.cell_set.filter(role="p") or member.cell_set.filter(role="vp"):
         #     print(member)
@@ -34,7 +36,7 @@ def index(request):
 
 
     context ={
-        'events' : events_obj , 
+        'events' : events_obj['events'] , 
         'sponsors' : sponsors ,
         'members' :chefs_obj,
         'speakers': speakers

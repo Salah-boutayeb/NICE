@@ -248,12 +248,14 @@
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
           <div class="lv_glry_slider popup-gallery">
             <div class="owl-carousel owl-theme">
+              {% for event in events %}
               <div class="item">
-                <a href="assets/images/content/big_eg1.jpg" title=""
-                  ><img src="assets/images/content/eg1.jpg" alt="Event"
+                <a href="assets/images/content/big_eg1.jpg" title="{{event.event.title}} ">
+                  <img src="{{event.event.thumbnail.url}}" alt="{{event.event.title}} "
                 /></a>
               </div>
-              <div class="item">
+              {% endfor %}
+              {% comment %} <div class="item">
                 <a href="assets/images/content/big_eg2.jpg" title=""
                   ><img src="assets/images/content/eg2.jpg" alt="Event"
                 /></a>
@@ -277,7 +279,7 @@
                 <a href="assets/images/content/big_eg2.jpg" title=""
                   ><img src="assets/images/content/eg2.jpg" alt="Event"
                 /></a>
-              </div>
+              </div> {% endcomment %}
             </div>
           </div>
         </div>
@@ -332,52 +334,53 @@
             <div class="tab-content">
               <div role="tabpanel" class="tab-pane active" id="0">
                 <ul>
+                  {% for event in events %}
                   <li>
                     <div class="lv_schedule_details">
                       <div class="lv_schedule_details_img">
                         <img
-                          src="assets/images/content/es3.png"
+                          src="{{event.event.thumbnail.url}}"
                           alt="Event Schedule"
                         />
                       </div>
                       <div class="lv_schedule_details_text">
-                        <h3>How to make beautiful design ?</h3>
+                        <h3>{{event.event.title}}</h3>
                         <p>
-                          Proin gravida nibh vel velit auctor aliquet. Aenean
-                          sollicitudin, lorem quis bibendum the auctor, nisi
-                          elit consequat ipsum, nec sagittis sem nibh id elit...
+                          {{event.event.description}}
                         </p>
                         <ul>
                           <li>
                             <img
-                              src="assets/images/content/admin.png"
+                              src="{% static 'assets/images/content/admin.png' %}"
                               alt="by"
                             />By Sunita A.
                           </li>
                           <li>
                             <img
-                              src="assets/images/content/time.png"
+                              src="{% static 'assets/images/content/time.png'  %}"
                               alt="time"
-                            />2:30 - 4:30
+                            />{{event.event.eventDay}}
                           </li>
                           <li>
                             <img
-                              src="assets/images/content/pin.png"
+                              src="{% static 'assets/images/content/pin.png' %}"
                               alt="pin"
-                            />Business Hall No. 1
+                            />{{event.eventlocalisation.locale_name}} , {{event.eventlocalisation.x_locale}} , {{event.eventlocalisation.y_locale}}
                           </li>
                         </ul>
                       </div>
                       <div class="lv_schedule_details_btn">
                         <div class="lv_btn lv_toppadder40">
-                          <a class="btn_2" href="./event-details.html"
+                          <a class="btn_2" href="{% url 'getEvent' id=event.event.id %}
+                          "
                             >Details</a
                           >
                         </div>
                       </div>
                     </div>
                   </li>
-                  <li>
+                  {% endfor %}
+                  {% comment %} <li>
                     <div class="lv_schedule_details">
                       <div class="lv_schedule_details_img">
                         <img
@@ -511,7 +514,7 @@
                         </div>
                       </div>
                     </div>
-                  </li>
+                  </li> {% endcomment %}
                 </ul>
               </div>
               <div role="tabpanel" class="tab-pane" id="1">
@@ -918,10 +921,12 @@
             </p>
           </div>
         </div>
+
+        {% for member  in members  %}
         <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
           <div class="lv_speakers_box">
             <div class="lv_speakers_box_img">
-              <img src="assets/images/content/sp1.jpg" alt="speak" />
+              <img src="{{member.image.url}}" alt="speak" />
               <div class="lv_speakers_box_social">
                 <ul>
                   <li>
@@ -948,12 +953,14 @@
               </div>
             </div>
             <div class="lv_speakers_box_text">
-              <h3>Mr. Jhon Doe</h3>
-              <p>(CEO, liveevent)</p>
+              <h3>{{member.nom}} {{member.prenom}}</h3>
+              <p>({{member.description}})</p>
             </div>
           </div>
         </div>
-        <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
+        {% endfor %}
+        
+        {% comment %} <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
           <div class="lv_speakers_box">
             <div class="lv_speakers_box_img">
               <img src="assets/images/content/sp2.jpg" alt="speak" />
@@ -1197,7 +1204,7 @@
               <p>(CEO, liveevent)</p>
             </div>
           </div>
-        </div>
+        </div> {% endcomment %}
       </div>
       <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
         <div class="lv_btn lv_toppadder30 text-center">
@@ -1398,10 +1405,12 @@
             <ul>
               <li>
                 <ul>
+                  {% for sponsor in sponsors  %}
                   <li>
-                    <img src="assets/images/content/spo1.png" alt="sponsors" />
+                    <img src="{{sponsor.image.url}}" alt="{{sponsor.name}}" />
                   </li>
-                  <li>
+                  {% endfor %}
+                  {% comment %} <li>
                     <img src="assets/images/content/spo2.png" alt="sponsors" />
                   </li>
                   <li>
@@ -1412,10 +1421,10 @@
                   </li>
                   <li>
                     <img src="assets/images/content/spo5.png" alt="sponsors" />
-                  </li>
+                  </li> {% endcomment %}
                 </ul>
               </li>
-              <li>
+              {% comment %} <li>
                 <ul>
                   <li>
                     <img src="assets/images/content/spo6.png" alt="sponsors" />
@@ -1433,7 +1442,7 @@
                     <img src="assets/images/content/spo10.png" alt="sponsors" />
                   </li>
                 </ul>
-              </li>
+              </li> {% endcomment %}
             </ul>
           </div>
           <div class="lv_btn lv_toppadder80 text-center">
