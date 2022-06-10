@@ -127,7 +127,7 @@
                       </g>
                     </g>
                   </svg>
-                  <h4>27th - 3rd Jun.</h4>
+                  <h4>25th - 26th Jun.</h4>
                   <p>2022</p>
                 </div>
               </li>
@@ -165,7 +165,7 @@
                       />
                     </g>
                   </svg>
-                  <h4>12 Speakers</h4>
+                  <h4>{{ speakers|length }} Speakers</h4>
                   <p>EXPERTS</p>
                 </div>
               </li>
@@ -227,7 +227,6 @@
   </div>
 
   <!-- Event Gallry Wrapper Start -->
-  fid
   <div class="lv_event_glry_wrapper lv_toppadder100 lv_bottompadder100">
     <div class="lv_img_overlay"></div>
     <div class="container">
@@ -250,36 +249,11 @@
             <div class="owl-carousel owl-theme">
               {% for event in events %}
               <div class="item">
-                <a href="assets/images/content/big_eg1.jpg" title="{{event.event.title}} ">
-                  <img src="{{event.event.thumbnail.url}}" alt="{{event.event.title}} "
+                <a href="{{event.thumbnail.url}}" title="{{event.title}} ">
+                  <img src="{{event.thumbnail.url}}" alt="{{event.title}} "
                 /></a>
               </div>
               {% endfor %}
-              {% comment %} <div class="item">
-                <a href="assets/images/content/big_eg2.jpg" title=""
-                  ><img src="assets/images/content/eg2.jpg" alt="Event"
-                /></a>
-              </div>
-              <div class="item">
-                <a href="assets/images/content/big_eg3.jpg" title=""
-                  ><img src="assets/images/content/eg3.jpg" alt="Event"
-                /></a>
-              </div>
-              <div class="item">
-                <a href="assets/images/content/big_eg4.jpg" title=""
-                  ><img src="assets/images/content/eg4.jpg" alt="Event"
-                /></a>
-              </div>
-              <div class="item">
-                <a href="assets/images/content/big_eg1.jpg" title=""
-                  ><img src="assets/images/content/eg1.jpg" alt="Event"
-                /></a>
-              </div>
-              <div class="item">
-                <a href="assets/images/content/big_eg2.jpg" title=""
-                  ><img src="assets/images/content/eg2.jpg" alt="Event"
-                /></a>
-              </div> {% endcomment %}
             </div>
           </div>
         </div>
@@ -311,20 +285,14 @@
           <div class="lv_schedule_infotabs">
             <!-- Nav tabs -->
             <ul class="nav nav-tabs" role="tablist">
-              <li role="presentation" class="active">
-                <a href="#0" aria-controls="0" role="tab" data-toggle="tab">
-                  <p>Jun 24, 2022</p>
-                  <span>Friday</span>
-                </a>
-              </li>
               <li role="presentation">
-                <a href="#1" aria-controls="1" role="tab" data-toggle="tab">
+                <a href="#0" aria-controls="0" role="tab" data-toggle="tab">
                   <p>Jun 25, 2022</p>
                   <span>Saturday</span>
                 </a>
               </li>
               <li role="presentation">
-                <a href="#2" aria-controls="2" role="tab" data-toggle="tab">
+                <a href="#1" aria-controls="1" role="tab" data-toggle="tab">
                   <p>Jun 26, 2022</p>
                   <span>Sunday</span>
                 </a>
@@ -334,20 +302,18 @@
             <div class="tab-content">
               <div role="tabpanel" class="tab-pane active" id="0">
                 <ul>
-                  {% for event in events %}
+                  {% for event in events_day_one %}
                   <li>
                     <div class="lv_schedule_details">
                       <div class="lv_schedule_details_img">
                         <img
-                          src="{{event.event.thumbnail.url}}"
+                          src="{{event.thumbnail.url}}"
                           alt="Event Schedule"
                         />
                       </div>
                       <div class="lv_schedule_details_text">
-                        <h3>{{event.event.title}}</h3>
-                        <p>
-                          {{event.event.description}}
-                        </p>
+                        <h3>{{event.title}}</h3>
+                        <p>{{event.description}}</p>
                         <ul>
                           <li>
                             <img
@@ -359,19 +325,75 @@
                             <img
                               src="{% static 'assets/images/content/time.png'  %}"
                               alt="time"
-                            />{{event.event.eventDay}}
+                            />{{event.eventDay}}
                           </li>
                           <li>
                             <img
                               src="{% static 'assets/images/content/pin.png' %}"
                               alt="pin"
-                            />{{event.eventlocalisation.locale_name}} , {{event.eventlocalisation.x_locale}} , {{event.eventlocalisation.y_locale}}
+                            />{{event.eventlocalisation.locale_name}} ,
+                            {{event.eventlocalisation.x_locale}} ,
+                            {{event.eventlocalisation.y_locale}}
                           </li>
                         </ul>
                       </div>
                       <div class="lv_schedule_details_btn">
                         <div class="lv_btn lv_toppadder40">
-                          <a class="btn_2" href="{% url 'getEvent' id=event.event.id %}
+                          <a
+                            class="btn_2"
+                            href="{% url 'getEvent' id=event.id %}
+                          "
+                            >Details</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  {% endfor %}
+                </ul>
+              </div>
+              <div role="tabpanel" class="tab-pane" id="1">
+                <ul>
+                  {% for event in events_day_two %}
+                  <li>
+                    <div class="lv_schedule_details">
+                      <div class="lv_schedule_details_img">
+                        <img
+                          src="{{event.thumbnail.url}}"
+                          alt="Event Schedule"
+                        />
+                      </div>
+                      <div class="lv_schedule_details_text">
+                        <h3>{{event.title}}</h3>
+                        <p>{{event.description}}</p>
+                        <ul>
+                          <li>
+                            <img
+                              src="{% static 'assets/images/content/admin.png' %}"
+                              alt="by"
+                            />By Sunita A.
+                          </li>
+                          <li>
+                            <img
+                              src="{% static 'assets/images/content/time.png'  %}"
+                              alt="time"
+                            />{{event.eventDay}}
+                          </li>
+                          <li>
+                            <img
+                              src="{% static 'assets/images/content/pin.png' %}"
+                              alt="pin"
+                            />{{event.eventlocalisation.locale_name}} ,
+                            {{event.eventlocalisation.x_locale}} ,
+                            {{event.eventlocalisation.y_locale}}
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="lv_schedule_details_btn">
+                        <div class="lv_btn lv_toppadder40">
+                          <a
+                            class="btn_2"
+                            href="{% url 'getEvent' id=event.id %}
                           "
                             >Details</a
                           >
@@ -419,295 +441,49 @@
           </div>
         </div>
 
-        {% for cell  in cells  %}
-          <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
-            <div class="lv_speakers_box">
-              <div class="lv_speakers_box_img">
-                <img src="{{cell.chef.image.url}}" alt="speak" />
-                <div class="lv_speakers_box_social">
-                  <ul>
-                    <li>
-                      <a target="_blank" href="{{cell.chef.linkedin}}"
-                        ><i class="fa fa-linkedin" aria-hidden="true"></i
-                      ></a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="lv_speakers_box_text">
-                <h3>{{cell.chef.nom}} {{cell.chef.prenom}}</h3>
-                <p>(Chef Cellule {{cell.nom}})</p>
+        {% for cell in cells %}
+        <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
+          <div class="lv_speakers_box">
+            <div class="lv_speakers_box_img">
+              <img src="{{cell.chef.image.url}}" alt="speak" />
+              <div class="lv_speakers_box_social">
+                <ul>
+                  <li>
+                    <a target="_blank" href="{{cell.chef.linkedin}}"
+                      ><i class="fa fa-linkedin" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                </ul>
               </div>
             </div>
+            <div class="lv_speakers_box_text">
+              <h3>{{cell.chef.nom}} {{cell.chef.prenom}}</h3>
+              <p>(Chef Cellule {{cell.nom}})</p>
+            </div>
           </div>
+        </div>
 
-          <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
-            <div class="lv_speakers_box">
-              <div class="lv_speakers_box_img">
-                <img src="{{cell.co_chef.image.url}}" alt="speak" />
-                <div class="lv_speakers_box_social">
-                  <ul>
-                    <li>
-                      <a target="_blank" href="{{cell.co_chef.linkedin}}"
-                        ><i class="fa fa-linkedin" aria-hidden="true"></i
-                      ></a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="lv_speakers_box_text">
-                <h3>{{cell.co_chef.nom}} {{cell.co_chef.prenom}}</h3>
-                <p>(Co-Chef Cellule {{cell.nom}})</p>
+        <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
+          <div class="lv_speakers_box">
+            <div class="lv_speakers_box_img">
+              <img src="{{cell.co_chef.image.url}}" alt="speak" />
+              <div class="lv_speakers_box_social">
+                <ul>
+                  <li>
+                    <a target="_blank" href="{{cell.co_chef.linkedin}}"
+                      ><i class="fa fa-linkedin" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                </ul>
               </div>
             </div>
+            <div class="lv_speakers_box_text">
+              <h3>{{cell.co_chef.nom}} {{cell.co_chef.prenom}}</h3>
+              <p>(Co-Chef Cellule {{cell.nom}})</p>
+            </div>
           </div>
+        </div>
         {% endfor %}
-        
-        {% comment %} <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
-          <div class="lv_speakers_box">
-            <div class="lv_speakers_box_img">
-              <img src="assets/images/content/sp2.jpg" alt="speak" />
-              <div class="lv_speakers_box_social">
-                <ul>
-                  <li>
-                    <a href="#"
-                      ><i class="fa fa-facebook" aria-hidden="true"></i
-                    ></a>
-                  </li>
-                  <li>
-                    <a href="#"
-                      ><i class="fa fa-twitter" aria-hidden="true"></i
-                    ></a>
-                  </li>
-                  <li>
-                    <a href="#"
-                      ><i class="fa fa-behance" aria-hidden="true"></i
-                    ></a>
-                  </li>
-                  <li>
-                    <a href="#"
-                      ><i class="fa fa-linkedin" aria-hidden="true"></i
-                    ></a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="lv_speakers_box_text">
-              <h3>Mr. Thomas</h3>
-              <p>(CEO, liveevent)</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
-          <div class="lv_speakers_box">
-            <div class="lv_speakers_box_img">
-              <img src="assets/images/content/sp3.jpg" alt="speak" />
-              <div class="lv_speakers_box_social">
-                <ul>
-                  <li>
-                    <a href="#"
-                      ><i class="fa fa-facebook" aria-hidden="true"></i
-                    ></a>
-                  </li>
-                  <li>
-                    <a href="#"
-                      ><i class="fa fa-twitter" aria-hidden="true"></i
-                    ></a>
-                  </li>
-                  <li>
-                    <a href="#"
-                      ><i class="fa fa-behance" aria-hidden="true"></i
-                    ></a>
-                  </li>
-                  <li>
-                    <a href="#"
-                      ><i class="fa fa-linkedin" aria-hidden="true"></i
-                    ></a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="lv_speakers_box_text">
-              <h3>Mr. Williom Max</h3>
-              <p>(CEO, liveevent)</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
-          <div class="lv_speakers_box">
-            <div class="lv_speakers_box_img">
-              <img src="assets/images/content/sp4.jpg" alt="speak" />
-              <div class="lv_speakers_box_social">
-                <ul>
-                  <li>
-                    <a href="#"
-                      ><i class="fa fa-facebook" aria-hidden="true"></i
-                    ></a>
-                  </li>
-                  <li>
-                    <a href="#"
-                      ><i class="fa fa-twitter" aria-hidden="true"></i
-                    ></a>
-                  </li>
-                  <li>
-                    <a href="#"
-                      ><i class="fa fa-behance" aria-hidden="true"></i
-                    ></a>
-                  </li>
-                  <li>
-                    <a href="#"
-                      ><i class="fa fa-linkedin" aria-hidden="true"></i
-                    ></a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="lv_speakers_box_text">
-              <h3>Mrs. Sunshine</h3>
-              <p>(CEO, liveevent)</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
-          <div class="lv_speakers_box">
-            <div class="lv_speakers_box_img">
-              <img src="assets/images/content/sp5.jpg" alt="speak" />
-              <div class="lv_speakers_box_social">
-                <ul>
-                  <li>
-                    <a href="#"
-                      ><i class="fa fa-facebook" aria-hidden="true"></i
-                    ></a>
-                  </li>
-                  <li>
-                    <a href="#"
-                      ><i class="fa fa-twitter" aria-hidden="true"></i
-                    ></a>
-                  </li>
-                  <li>
-                    <a href="#"
-                      ><i class="fa fa-behance" aria-hidden="true"></i
-                    ></a>
-                  </li>
-                  <li>
-                    <a href="#"
-                      ><i class="fa fa-linkedin" aria-hidden="true"></i
-                    ></a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="lv_speakers_box_text">
-              <h3>Mr. Maxwell</h3>
-              <p>(CEO, liveevent)</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
-          <div class="lv_speakers_box">
-            <div class="lv_speakers_box_img">
-              <img src="assets/images/content/sp6.jpg" alt="speak" />
-              <div class="lv_speakers_box_social">
-                <ul>
-                  <li>
-                    <a href="#"
-                      ><i class="fa fa-facebook" aria-hidden="true"></i
-                    ></a>
-                  </li>
-                  <li>
-                    <a href="#"
-                      ><i class="fa fa-twitter" aria-hidden="true"></i
-                    ></a>
-                  </li>
-                  <li>
-                    <a href="#"
-                      ><i class="fa fa-behance" aria-hidden="true"></i
-                    ></a>
-                  </li>
-                  <li>
-                    <a href="#"
-                      ><i class="fa fa-linkedin" aria-hidden="true"></i
-                    ></a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="lv_speakers_box_text">
-              <h3>Mrs. Joaana</h3>
-              <p>(CEO, liveevent)</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
-          <div class="lv_speakers_box">
-            <div class="lv_speakers_box_img">
-              <img src="assets/images/content/sp7.jpg" alt="speak" />
-              <div class="lv_speakers_box_social">
-                <ul>
-                  <li>
-                    <a href="#"
-                      ><i class="fa fa-facebook" aria-hidden="true"></i
-                    ></a>
-                  </li>
-                  <li>
-                    <a href="#"
-                      ><i class="fa fa-twitter" aria-hidden="true"></i
-                    ></a>
-                  </li>
-                  <li>
-                    <a href="#"
-                      ><i class="fa fa-behance" aria-hidden="true"></i
-                    ></a>
-                  </li>
-                  <li>
-                    <a href="#"
-                      ><i class="fa fa-linkedin" aria-hidden="true"></i
-                    ></a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="lv_speakers_box_text">
-              <h3>Mr. Robot Dev</h3>
-              <p>(CEO, liveevent)</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
-          <div class="lv_speakers_box">
-            <div class="lv_speakers_box_img">
-              <img src="assets/images/content/sp8.jpg" alt="speak" />
-              <div class="lv_speakers_box_social">
-                <ul>
-                  <li>
-                    <a href="#"
-                      ><i class="fa fa-facebook" aria-hidden="true"></i
-                    ></a>
-                  </li>
-                  <li>
-                    <a href="#"
-                      ><i class="fa fa-twitter" aria-hidden="true"></i
-                    ></a>
-                  </li>
-                  <li>
-                    <a href="#"
-                      ><i class="fa fa-behance" aria-hidden="true"></i
-                    ></a>
-                  </li>
-                  <li>
-                    <a href="#"
-                      ><i class="fa fa-linkedin" aria-hidden="true"></i
-                    ></a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="lv_speakers_box_text">
-              <h3>Mrs. Rose Doe</h3>
-              <p>(CEO, liveevent)</p>
-            </div>
-          </div>
-        </div> {% endcomment %}
       </div>
       <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
         <div class="lv_btn lv_toppadder30 text-center">
@@ -908,12 +684,12 @@
             <ul>
               <li>
                 <ul>
-                  {% for sponsor in sponsors  %}
+                  {% for sponsor in sponsors %}
                   <li>
                     <img src="{{sponsor.image.url}}" alt="{{sponsor.name}}" />
                   </li>
-                  {% endfor %}
-                  {% comment %} <li>
+                  {% endfor %} {% comment %}
+                  <li>
                     <img src="assets/images/content/spo2.png" alt="sponsors" />
                   </li>
                   <li>
@@ -924,10 +700,12 @@
                   </li>
                   <li>
                     <img src="assets/images/content/spo5.png" alt="sponsors" />
-                  </li> {% endcomment %}
+                  </li>
+                  {% endcomment %}
                 </ul>
               </li>
-              {% comment %} <li>
+              {% comment %}
+              <li>
                 <ul>
                   <li>
                     <img src="assets/images/content/spo6.png" alt="sponsors" />
@@ -945,7 +723,8 @@
                     <img src="assets/images/content/spo10.png" alt="sponsors" />
                   </li>
                 </ul>
-              </li> {% endcomment %}
+              </li>
+              {% endcomment %}
             </ul>
           </div>
           <div class="lv_btn lv_toppadder80 text-center">

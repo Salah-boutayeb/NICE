@@ -23,22 +23,17 @@ class Cell(models.Model):
     co_chef = models.OneToOneField(
         Member, blank=True, null=True, related_name='co_chef', on_delete=models.CASCADE)
     members = models.ManyToManyField(
-        Member, blank=True, null=True, related_name='members')
+        Member, blank=True, related_name='members')
 
     def __str__(self):
         return self.nom
 
+class EventDay(models.Model):
+    name = models.CharField(max_length=255)
+    eventDay = models.DateField(null=True)
+    def __str__(self):
+        return self.name
 
-# class Role(models.Model):
-#     role = models.CharField(
-#             choices=(('chef','chef'),('co-chef','co-chef'),('member','member'),('vp','vp'),('p','p')),
-#             blank=False,
-#             max_length=50
-#     )
-#     member=models.ForeignKey(Member,on_delete=models.CASCADE)
-#     cell=models.ForeignKey(Cell,null=True, blank=True,on_delete=models.CASCADE)
-#     def __str__(self):
-#         return self.role
 
 
 class Event(models.Model):
@@ -46,9 +41,8 @@ class Event(models.Model):
     description = models.TextField()
     thumbnail = models.ImageField(upload_to="thumbnail")
     created = models.DateTimeField(auto_now_add=True)
-    eventDay = models.DateField(null=True)
     places = models.IntegerField(null=True)
-
+    eventDay = models.ForeignKey(EventDay,null=True,blank=True,on_delete=models.CASCADE)
     def __str__(self):
         return self.title
 
@@ -64,7 +58,7 @@ class EventLink(models.Model):
     event = models.ForeignKey(Event, on_delete=models.CASCADE)
 
     def __str__(self):
-        return self.title
+        return self.title +" of "+ self.event.title
 
 
 class EventLocalisation(models.Model):
@@ -75,8 +69,7 @@ class EventLocalisation(models.Model):
     y_locale = models.DecimalField(max_digits=9, decimal_places=6)
 
     def __str__(self):
-        return self.locale_name
-
+        return self.locale_name +" of "+ self.event.title
 
 class Sponsor(models.Model):
     name = models.CharField(max_length=255)
@@ -89,8 +82,9 @@ class Sponsor(models.Model):
 class Speaker(models.Model):
     full_name = models.CharField(max_length=255)
     image = models.ImageField()
-    description = models.TextField(blank=True)
+    description = models.CharField(max_length=255, null=True,blank=True)
     event = models.ForeignKey(Event, on_delete=models.CASCADE, null=True)
+    linkedin = models.CharField(max_length=255, null=True,blank=True)
     #TODO anas here: prob d hadi speaker dima 3ndo event wa7ed
 
 
