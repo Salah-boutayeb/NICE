@@ -72,5 +72,6 @@ def getMembers(request):
 
         for member in cell.members.all():
             print('------->',member)
+        context = {"cells": cells}
         
-    return render(request,'members.html')        
+    return render(request,'members.html', context)        
