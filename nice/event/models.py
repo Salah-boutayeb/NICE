@@ -47,7 +47,6 @@ class Event(models.Model):
     thumbnail = models.ImageField(upload_to="thumbnail")
     created = models.DateTimeField(auto_now_add=True)
     eventDay = models.DateField(null=True)
-    address = models.CharField(max_length=255, null=True)
     places = models.IntegerField(null=True)
 
     def __str__(self):

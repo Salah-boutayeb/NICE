@@ -18,6 +18,8 @@ def index(request):
 
         events_obj['events'].append(event_info)
 
+        #TODO from anas: Group events by day
+
     # sponsors
     sponsors = Sponsor.objects.all()
 
