@@ -1245,7 +1245,8 @@ text-align:center;
 position:relative;
 }
 .lv_speakers_box_img img{
-width:100%;
+width:198px;
+height: 198px;
 display:inline-block;
 }
 .lv_speakers_box_img:hover .lv_speakers_box_social{
